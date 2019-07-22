@@ -33,6 +33,13 @@ $custom-button-custom-horizontal-padding: 24px;
   @include test-cell-size(171, 71);
 }
 
+.test-cell--density-button {
+  @extend .test-cell--button;
+
+  display: inline-flex;
+  align-items: center;
+}
+
 .custom-button--ink-color {
   @include mdc-button-ink-color($custom-button-color);
 }
@@ -63,4 +70,12 @@ $custom-button-custom-horizontal-padding: 24px;
 
 .custom-button--horizontal-padding {
   @include mdc-button-horizontal-padding($custom-button-custom-horizontal-padding);
+}
+
+.custom-button--density-compact {
+  @include mdc-button-density(compact);
+}
+
+.custom-button--density-comfortable {
+  @include mdc-button-density(comfortable);
 }
